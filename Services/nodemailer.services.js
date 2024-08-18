@@ -16,7 +16,7 @@ export const mail = (senderEmail, verificationString) => {
     })
 
     // Generate the password reset link
-    const resetLink = `https://oneclick-urlshortener.netlify.app/${verificationString}`;
+    const resetLink = `https://oneclick-urlshortener.netlify.app/resetpage/${verificationString}`;
 
     // Email details
     const details = {
@@ -60,7 +60,7 @@ export const verifyMail = (senderEmail, verificationString) => {
     })
 
     // Generate the password reset link
-    const resetLink = `https://oneclick-urlshortener.netlify.app/${verificationString}`;
+    const resetLink = `https://oneclick-urlshortener.netlify.app/activation/${verificationString}`;
 
     // Email details
     const details = {
