@@ -170,7 +170,7 @@ export const createShorturl = async (req, res) => {
         }
     }
 
-    const shortUrl = `https://oneclick-urlshortener.netlify.app/${shortId}`;
+    const shortUrl = `https://urlshortener-backend-f361.onrender.com/${shortId}`;
 
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
